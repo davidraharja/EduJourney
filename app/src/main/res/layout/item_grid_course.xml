@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
-
+    <!-- Ini list buat recommended course & free course -->
     <ImageView
         android:id="@+id/img_grid_course"
         android:layout_width="350dp"
