@@ -5,7 +5,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="search">Type And Search</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="course_sample">Ini Course Pertama</string>
     <string name="app_name_desc">The Place to Start your Education</string>
@@ -13,4 +12,8 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
+    <string name="register_now">Register Now</string>
+    <string name="have_account">Already Have Account? Login!</string>
+    <string name="sample_course">Ini Course Pertama</string>
+    <string name="course_picture">Course Picture</string>
 </resources>

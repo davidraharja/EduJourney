@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import com.dicoding.edujourney.databinding.FragmentDashboardBinding
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import androidx.lifecycle.ViewModelProvider
+import com.dicoding.edujourney.R
 
 class DashboardFragment : Fragment() {
     private var _fragmentDashboardBinding: FragmentDashboardBinding? = null
