@@ -11,7 +11,7 @@
         android:theme="@style/Theme.EduJourney">
         <activity
             android:name=".BottomActivity"
-            android:label="@string/title_activity_bottom" />
+            android:label="@string/title_activity_bottom"></activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
