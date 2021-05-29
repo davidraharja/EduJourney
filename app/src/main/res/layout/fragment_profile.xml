@@ -16,21 +16,22 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/user_profile_picture" />
 
     <TextView
         android:id="@+id/tv_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Username"
+        android:text="@string/username"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_profile" />
 
-    <ImageView
+    <View
         android:id="@+id/tab1"
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -43,7 +44,7 @@
         android:id="@+id/tv_point_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EduPoint : "
+        android:text="@string/edupoint"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/tab1"
         app:layout_constraintEnd_toEndOf="@+id/tab1"
@@ -56,7 +57,7 @@
         android:id="@+id/tv_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="123456789"
+        android:text="@string/point"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/tab1"
         app:layout_constraintEnd_toEndOf="@+id/tab1"
@@ -65,7 +66,7 @@
         app:layout_constraintTop_toTopOf="@+id/tv_point_text"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
+    <View
         android:id="@+id/tab2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -82,12 +83,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="12dp"
-        android:text="Personal Data"
+        android:text="@string/personal_data"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/tab2"
         app:layout_constraintTop_toTopOf="@+id/tab2" />
 
-    <ImageView
+    <View
         android:id="@+id/tab_change_profile"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -105,7 +106,8 @@
         android:layout_marginStart="28dp"
         android:src="@drawable/ic_baseline_person_outline_dark_24"
         app:layout_constraintStart_toStartOf="@+id/tab_change_profile"
-        app:layout_constraintTop_toTopOf="@+id/tab_change_profile" />
+        app:layout_constraintTop_toTopOf="@+id/tab_change_profile"
+        android:contentDescription="@string/user_logo" />
 
     <TextView
         android:id="@+id/tv_change_profile"
@@ -114,11 +116,11 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:textSize="14sp"
-        android:text="Change Profile"
+        android:text="@string/change_profile"
         app:layout_constraintStart_toEndOf="@+id/user_logo"
         app:layout_constraintTop_toTopOf="@+id/tab_change_profile" />
 
-    <ImageView
+    <View
         android:id="@+id/tab_purchase_hisotry"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -135,7 +137,8 @@
         android:layout_marginStart="28dp"
         android:src="@drawable/ic_baseline_history_24"
         app:layout_constraintStart_toStartOf="@+id/tab_purchase_hisotry"
-        app:layout_constraintTop_toTopOf="@+id/tab_purchase_hisotry" />
+        app:layout_constraintTop_toTopOf="@+id/tab_purchase_hisotry"
+        android:contentDescription="@string/history_logo" />
 
     <TextView
         android:id="@+id/tv_history"
@@ -144,11 +147,11 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:textSize="14sp"
-        android:text="Purchase History"
+        android:text="@string/purchase_history"
         app:layout_constraintStart_toEndOf="@+id/history_logo"
         app:layout_constraintTop_toTopOf="@+id/tab_purchase_hisotry" />
 
-    <ImageView
+    <View
         android:id="@+id/tab5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -165,12 +168,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="12dp"
-        android:text="Other"
+        android:text="@string/other"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/tab5"
         app:layout_constraintTop_toTopOf="@+id/tab5" />
 
-    <ImageView
+    <View
         android:id="@+id/tab_about_us"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -188,7 +191,8 @@
         android:layout_marginStart="28dp"
         android:src="@drawable/ic_baseline_person_outline_dark_24"
         app:layout_constraintStart_toStartOf="@+id/tab_about_us"
-        app:layout_constraintTop_toTopOf="@+id/tab_about_us" />
+        app:layout_constraintTop_toTopOf="@+id/tab_about_us"
+        android:contentDescription="@string/about_us_logo" />
 
     <TextView
         android:id="@+id/tv_about_us"
@@ -197,11 +201,11 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:textSize="14sp"
-        android:text="About Us"
+        android:text="@string/about_us"
         app:layout_constraintStart_toEndOf="@+id/about_us_logo"
         app:layout_constraintTop_toTopOf="@+id/tab_about_us" />
 
-    <ImageView
+    <View
         android:id="@+id/tab_logout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -218,7 +222,8 @@
         android:layout_marginStart="28dp"
         android:src="@drawable/ic_baseline_history_24"
         app:layout_constraintStart_toStartOf="@+id/tab_logout"
-        app:layout_constraintTop_toTopOf="@+id/tab_logout" />
+        app:layout_constraintTop_toTopOf="@+id/tab_logout"
+        android:contentDescription="@string/logout_logo" />
 
     <TextView
         android:id="@+id/tv_logout"
@@ -227,7 +232,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:textSize="14sp"
-        android:text="Log Out"
+        android:text="@string/log_out"
         app:layout_constraintStart_toEndOf="@+id/logout_logo"
         app:layout_constraintTop_toTopOf="@+id/tab_logout" />
 

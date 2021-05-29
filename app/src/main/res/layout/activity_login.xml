@@ -7,7 +7,7 @@
     android:background="@color/blue"
     tools:context=".LoginActivity">
 
-    <ImageView
+    <View
         android:id="@+id/bg"
         android:layout_width="350dp"
         android:layout_height="650dp"
@@ -24,7 +24,7 @@
         android:layout_marginStart="48dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="EduJourney"
+        android:text="@string/edujourney"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/bg"
         app:layout_constraintStart_toStartOf="@+id/bg"
@@ -35,7 +35,7 @@
         android:id="@+id/subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Place to Start your Education"
+        android:text="@string/subtitle"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/bg"
         app:layout_constraintStart_toStartOf="@+id/bg"
@@ -49,18 +49,21 @@
         android:layout_marginTop="148dp"
         android:src="@drawable/ic_baseline_person_outline_dark_24"
         app:layout_constraintStart_toStartOf="@+id/bg"
-        app:layout_constraintTop_toBottomOf="@+id/subTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/subTitle"
+        android:contentDescription="@string/user_logo" />
 
     <EditText
         android:id="@+id/edt_email"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
-        android:hint="Email"
+        android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="@+id/bg"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/userLogo"
-        app:layout_constraintTop_toBottomOf="@+id/subTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/subTitle"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
 
     <ImageView
         android:id="@+id/pwLogo"
@@ -69,18 +72,21 @@
         android:layout_marginStart="20dp"
         android:src="@drawable/ic_baseline_lock_dark_24"
         app:layout_constraintStart_toStartOf="@+id/bg"
-        app:layout_constraintTop_toBottomOf="@+id/userLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/userLogo"
+        android:contentDescription="@string/password_logo" />
 
     <EditText
         android:id="@+id/edt_pw"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:hint="Password"
+        android:hint="@string/password"
         app:layout_constraintEnd_toEndOf="@+id/bg"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/pwLogo"
-        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btn_login"
@@ -89,7 +95,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/login_btn"
         android:elevation="10dp"
-        android:text="Login"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@+id/bg"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/bg"
@@ -102,7 +108,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/login_btn"
         android:elevation="10dp"
-        android:text="Register"
+        android:text="@string/register"
         app:layout_constraintEnd_toEndOf="@+id/bg"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/bg"

@@ -15,9 +15,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/image_course" />
 
-    <ImageView
+    <View
         android:id="@+id/title_list_spot"
         android:layout_width="300dp"
         android:layout_height="70dp"
@@ -31,7 +32,7 @@
         android:id="@+id/tv_title_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ini Course Pertama"
+        android:text="@string/course_title"
         android:textSize="12sp"
         android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/title_list_spot"
