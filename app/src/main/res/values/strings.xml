@@ -45,4 +45,7 @@
     <string name="tgl_lahir">Tgl Lahir</string>
     <string name="new_password">New Password</string>
     <string name="save">Save</string>
+    <string name="overview_course">Overview Course</string>
+    <string name="silabus">Silabus</string>
+    <string name="module_title">Judul Module</string>
 </resources>

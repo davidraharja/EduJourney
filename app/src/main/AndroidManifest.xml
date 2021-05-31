@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EduJourney">
+        <activity android:name=".DetailModuleActivity" />
+        <activity android:name=".DetailCourseActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity
             android:name=".BottomActivity"
