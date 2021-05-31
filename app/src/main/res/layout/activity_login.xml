@@ -7,7 +7,7 @@
     android:background="@color/blue"
     tools:context=".LoginActivity">
 
-    <ImageView
+    <View
         android:id="@+id/bg"
         android:layout_width="350dp"
         android:layout_height="650dp"
@@ -15,8 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/app_name" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title"
@@ -25,7 +24,7 @@
         android:layout_marginStart="48dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="@string/app_name"
+        android:text="@string/edujourney"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/bg"
         app:layout_constraintStart_toStartOf="@+id/bg"
@@ -36,7 +35,7 @@
         android:id="@+id/subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name_desc"
+        android:text="@string/subtitle"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/bg"
         app:layout_constraintStart_toStartOf="@+id/bg"
@@ -51,7 +50,7 @@
         android:src="@drawable/ic_baseline_person_outline_dark_24"
         app:layout_constraintStart_toStartOf="@+id/bg"
         app:layout_constraintTop_toBottomOf="@+id/subTitle"
-        android:contentDescription="@string/email" />
+        android:contentDescription="@string/user_logo" />
 
     <EditText
         android:id="@+id/edt_email"
@@ -59,11 +58,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:hint="@string/email"
-        android:layout_marginEnd="20dp"
-
         app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/userLogo"
-        app:layout_constraintTop_toBottomOf="@+id/subTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/subTitle"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
 
     <ImageView
         android:id="@+id/pwLogo"
@@ -73,18 +73,20 @@
         android:src="@drawable/ic_baseline_lock_dark_24"
         app:layout_constraintStart_toStartOf="@+id/bg"
         app:layout_constraintTop_toBottomOf="@+id/userLogo"
-        android:contentDescription="@string/password" />
+        android:contentDescription="@string/password_logo" />
 
     <EditText
         android:id="@+id/edt_pw"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="20dp"
         android:hint="@string/password"
         app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/pwLogo"
-        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btn_login"
@@ -95,6 +97,7 @@
         android:elevation="10dp"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/bg"
         app:layout_constraintTop_toBottomOf="@+id/edt_pw" />
 
@@ -107,6 +110,7 @@
         android:elevation="10dp"
         android:text="@string/register"
         app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/bg"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
