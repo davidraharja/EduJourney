@@ -18,7 +18,7 @@
         tools:src="@tools:sample/avatars"
         android:contentDescription="@string/image_course" />
 
-    <View
+    <ImageView
         android:id="@+id/title_list_spot"
         android:layout_width="300dp"
         android:layout_height="70dp"

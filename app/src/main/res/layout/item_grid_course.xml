@@ -2,16 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
     android:orientation="vertical">
     <!-- Ini list buat recommended course & free course -->
     <ImageView
         android:id="@+id/img_grid_course"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
         android:elevation="10dp"
         android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,16 +18,16 @@
         tools:src="@tools:sample/avatars"
         android:contentDescription="@string/image_course" />
 
-    <View
+    <ImageView
         android:id="@+id/title_spot"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:elevation="10dp"
         android:scaleType="center"
         android:src="@drawable/title_space"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_grid_course"
+        app:layout_constraintStart_toStartOf="@+id/img_grid_course"
         app:layout_constraintTop_toBottomOf="@+id/img_grid_course" />
 
     <TextView

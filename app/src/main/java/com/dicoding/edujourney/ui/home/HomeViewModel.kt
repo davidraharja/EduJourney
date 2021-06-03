@@ -1,13 +1,9 @@
 package com.dicoding.edujourney.ui.home
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
+import com.dicoding.edujourney.core.domain.usecase.CourseUseCase
 
-class HomeViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
-    }
-    val text: LiveData<String> = _text
+class HomeViewModel(courseUseCase: CourseUseCase) : ViewModel() {
+    val course = courseUseCase.getCourse().asLiveData()
 }

@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment"
-    android:background="@color/blue">
+    android:background="@color/blue"
+    tools:context=".ui.home.HomeFragment">
 
     <TextView
         android:id="@+id/tv_soft_skills"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
         android:text="@string/soft_skills"
-        android:textColor="@color/white"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,48 +38,48 @@
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/skills_box"
         android:src="@drawable/skill_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_soft_skills"
-        android:contentDescription="@string/skills_box" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_soft_skills" />
 
     <ImageView
         android:id="@+id/soft_bar_2"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/skills_box"
         android:src="@drawable/skill_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/soft_bar_1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_more_1"
-        android:contentDescription="@string/skills_box" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_more_1" />
 
     <ImageView
         android:id="@+id/soft_bar_3"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
+        android:contentDescription="@string/skills_box"
         android:src="@drawable/skill_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/soft_bar_1"
-        android:contentDescription="@string/skills_box" />
+        app:layout_constraintTop_toBottomOf="@+id/soft_bar_1" />
 
     <ImageView
         android:id="@+id/soft_bar_4"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/skills_box"
         android:src="@drawable/skill_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toEndOf="@+id/soft_bar_3"
-        app:layout_constraintTop_toBottomOf="@+id/soft_bar_2"
-        android:contentDescription="@string/skills_box" />
+        app:layout_constraintTop_toBottomOf="@+id/soft_bar_2" />
 
     <TextView
         android:id="@+id/tv_hard_skills"
@@ -112,48 +112,48 @@
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/skills_box"
         android:src="@drawable/skill_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_hard_skills"
-        android:contentDescription="@string/skills_box" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_hard_skills" />
 
     <ImageView
         android:id="@+id/hard_bar_2"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/skills_box"
         android:src="@drawable/skill_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toEndOf="@+id/hard_bar_1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_more_2"
-        android:contentDescription="@string/skills_box" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_more_2" />
 
     <ImageView
         android:id="@+id/hard_bar_3"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
+        android:contentDescription="@string/skills_box"
         android:src="@drawable/skill_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hard_bar_1"
-        android:contentDescription="@string/skills_box" />
+        app:layout_constraintTop_toBottomOf="@+id/hard_bar_1" />
 
     <ImageView
         android:id="@+id/hard_bar_4"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/skills_box"
         android:src="@drawable/skill_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toEndOf="@+id/hard_bar_3"
-        app:layout_constraintTop_toBottomOf="@+id/hard_bar_2"
-        android:contentDescription="@string/skills_box" />
+        app:layout_constraintTop_toBottomOf="@+id/hard_bar_2" />
 
     <TextView
         android:id="@+id/tv_recommended"
@@ -167,16 +167,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hard_bar_3" />
 
-<!--    Ini recyclerviewnya-->
+    <!--    Ini recyclerviewnya-->
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_1"
+        android:id="@+id/rv_free"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
         android:src="@drawable/persegi_history"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_recommended" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_recommended"
+        tools:listitem="@layout/item_grid_course"
+        tools:orientation="horizontal" />
 
     <TextView
         android:id="@+id/tv_free"
@@ -188,17 +192,20 @@
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recycler_1" />
-<!--    Ini recycler buat freecourse-->
+        app:layout_constraintTop_toBottomOf="@+id/rv_free" />
+    <!--    Ini recycler buat freecourse-->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_2"
+        android:id="@+id/rv_pay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
+        android:orientation="horizontal"
         android:src="@drawable/persegi_history"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_free" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_free"
+        tools:listitem="@layout/item_grid_course" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,8 +35,7 @@
         android:id="@+id/tab1"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:src="@drawable/login_btn"
-        app:layout_constraintEnd_toEndOf="parent"
+android:background="@color/login_regis"        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_username" />
 

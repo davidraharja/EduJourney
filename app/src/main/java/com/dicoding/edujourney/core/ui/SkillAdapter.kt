@@ -5,12 +5,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.dicoding.edujourney.core.source.local.entity.SkillEntity
+import com.dicoding.edujourney.R
+import com.dicoding.edujourney.core.source.local.entity.CourseEntity
 import com.dicoding.edujourney.databinding.ItemListCourseBinding
 
 class SkillAdapter : RecyclerView.Adapter<SkillAdapter.SkillViewHolder>() {
-    private var listSkill = ArrayList<SkillEntity>()
-    fun setSkill(skill: List<SkillEntity>?) {
+    private var listSkill = ArrayList<CourseEntity>()
+    fun setSkill(skill: List<CourseEntity>?) {
         if (skill == null) return
         this.listSkill.clear()
         this.listSkill.addAll(skill)
@@ -19,7 +20,7 @@ class SkillAdapter : RecyclerView.Adapter<SkillAdapter.SkillViewHolder>() {
 
     inner class SkillViewHolder(private val binding: ItemListCourseBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(skill: SkillEntity) {
+        fun bind(skill: CourseEntity) {
             with(binding) {
                 Glide.with(itemView.context).load(skill.image).apply(
                     RequestOptions.placeholderOf(R.drawable.ic_loading).error(R.drawable.ic_error)

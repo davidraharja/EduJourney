@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.dicoding.edujourney.R
 import com.dicoding.edujourney.core.source.local.entity.CourseEntity
 import com.dicoding.edujourney.databinding.ItemGridCourseBinding
 
