@@ -3,6 +3,8 @@ package com.dicoding.edujourney.di
 import com.dicoding.edujourney.core.domain.usecase.CourseInteractor
 import com.dicoding.edujourney.core.domain.usecase.CourseUseCase
 import com.dicoding.edujourney.ui.dashboard.DashboardViewModel
+import com.dicoding.edujourney.ui.detail.DetailViewModel
+import com.dicoding.edujourney.ui.history.HistoryViewModel
 import com.dicoding.edujourney.ui.home.HomeViewModel
 import com.dicoding.edujourney.ui.notifications.ProfileViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -14,8 +16,11 @@ val useCaseModule = module {
     }
 }
 val viewModelModule = module{
-    viewModel { DashboardViewModel() }
-    viewModel { HomeViewModel() }
+    viewModel { DashboardViewModel(get()) }
+    viewModel { HomeViewModel(get()) }
     viewModel { ProfileViewModel() }
+    viewModel { HistoryViewModel(get()) }
+    viewModel { DetailViewModel(get()) }
+
 
 }

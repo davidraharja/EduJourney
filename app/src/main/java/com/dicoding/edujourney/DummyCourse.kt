@@ -1,8 +1,13 @@
 package com.dicoding.edujourney
 
+import com.dicoding.edujourney.core.source.remote.response.CourseResponse
+
 object DummyCourse {
 
-    private val title = arrayOf(
+    private var id = arrayOf(
+        "s1", "s2", "s3", "s4", "h1", "h2", "h3", "h4"
+    )
+    private var title = arrayOf(
         "Communication",
         "Ms.Office",
         "English",
@@ -13,7 +18,7 @@ object DummyCourse {
         "Graphic Design"
     )
 
-    private val overview = arrayOf(
+    private var description = arrayOf(
         "In this course you will learn about professional communication that will be needed in your career",
         "In this course you will learn how to use basic Ms.Office such as Ms.Word, Ms.Excel, etc",
         "English course that everyone needs in their career path",
@@ -37,18 +42,18 @@ object DummyCourse {
                 "6. Get paid for being a productive designer"
     )
 
-    private val price = arrayOf(
-        "Free",
-        "Free",
+    private var price = intArrayOf(
+        0,
+        0,
         50000,
-        "Free",
+        0,
         250000,
         200000,
         60000,
-        "Free"
+        0
     )
 
-    private val module = arrayOf(
+    private var module = arrayOf(
         "Module 1",
         "Module 2",
         "Module 3",
@@ -56,7 +61,7 @@ object DummyCourse {
         "Module 5"
     )
 
-    private val type = arrayOf(
+    private var type = arrayOf(
         "SOFT",
         "SOFT",
         "SOFT",
@@ -67,14 +72,31 @@ object DummyCourse {
         "HARD"
     )
 
-    private val recommended = arrayOf(
-        "YES",
-        "NO",
-        "YES",
-        "YES",
-        "YES",
-        "YES",
-        "NO",
-        "NO"
+    private var recommended = arrayOf(
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
     )
+    val listData: ArrayList<CourseResponse>
+    get(){
+        val list = arrayListOf<CourseResponse>()
+        for(position in id.indices){
+            list.add(CourseResponse(
+                courseId = id[position],
+                image = id[position],
+                title = title[position],
+                description = description[position],
+                type = type[position],
+                price = price[position],
+                recommended = recommended[position],
+            ))
+        }
+        return list
+    }
+
 }

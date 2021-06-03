@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.Flow
 class CourseInteractor(private val courseRepository: CourseRepository) :CourseUseCase {
     override fun getCourse(): Flow<Resource<List<Course>>> = courseRepository.getCourse()
 
-    override fun getDetail(id: Int): Flow<Course> = courseRepository.getDetail(id)
+    override fun getDetail(id: String): Flow<Course> = courseRepository.getDetail(id)
 
     override fun getEnrolledCourse(): Flow<List<Course>>  = courseRepository.getEnrolledCourse()
 

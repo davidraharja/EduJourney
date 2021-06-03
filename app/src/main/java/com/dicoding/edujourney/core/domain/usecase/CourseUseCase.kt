@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface CourseUseCase {
     fun getCourse(): Flow<Resource<List<Course>>>
-    fun getDetail(id: Int): Flow<Course>
+    fun getDetail(id: String): Flow<Course>
     fun getEnrolledCourse(): Flow<List<Course>>
 
     fun getSearch(query: String): Flow<List<Course>>

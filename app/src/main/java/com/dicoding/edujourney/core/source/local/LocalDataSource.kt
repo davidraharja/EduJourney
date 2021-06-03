@@ -9,7 +9,7 @@ class LocalDataSource(private val mCourseDao: CourseDao) {
 
     fun getEnrolledCourse(): Flow<List<CourseEntity>> = mCourseDao.getEnrolledCourse()
 
-    fun getDetail(id: Int): Flow<CourseEntity> = mCourseDao.getDetail(id)
+    fun getDetail(id: String): Flow<CourseEntity> = mCourseDao.getDetail(id)
 
     fun updateEnroll(courseEntity: CourseEntity) = mCourseDao.updateEnroll(courseEntity)
 

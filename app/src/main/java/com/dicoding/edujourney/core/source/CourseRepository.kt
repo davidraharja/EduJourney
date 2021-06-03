@@ -40,7 +40,7 @@ class CourseRepository(
         }.asFlow()
     }
 
-    override fun getDetail(id: Int): Flow<Course> {
+    override fun getDetail(id: String): Flow<Course> {
         return localDataSource.getDetail(id).map {
             DataMapper.mapEntityToDomain(it)
         }

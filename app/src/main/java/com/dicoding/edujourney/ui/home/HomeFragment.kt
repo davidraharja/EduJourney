@@ -55,7 +55,6 @@ class HomeFragment : Fragment() {
 
     private fun setupRecycler() {
         adapter = CourseAdapter()
-        adapter.onItem
 
 
     }

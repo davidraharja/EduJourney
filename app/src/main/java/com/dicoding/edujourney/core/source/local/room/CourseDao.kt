@@ -13,7 +13,7 @@ interface CourseDao {
     fun getEnrolledCourse() : Flow<List<CourseEntity>>
 
     @Query("SELECT * FROM course_table WHERE courseId = :id ")
-    fun getDetail(id: Int) : Flow<CourseEntity>
+    fun getDetail(id: String) : Flow<CourseEntity>
 
     @Update
     fun updateEnroll(courseEntity: CourseEntity)

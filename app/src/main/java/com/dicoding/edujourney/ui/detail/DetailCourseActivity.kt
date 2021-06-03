@@ -1,7 +1,8 @@
-package com.dicoding.edujourney
+package com.dicoding.edujourney.ui.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dicoding.edujourney.R
 
 class DetailCourseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
