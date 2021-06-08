@@ -48,4 +48,7 @@
     <string name="overview_course">Overview Course</string>
     <string name="silabus">Silabus</string>
     <string name="module_title">Judul Module</string>
+    <string name="profile">Profile</string>
+    <string name="owned_course">Owned Course</string>
+    <string name="emptycourse">You don\'t have any course</string>
 </resources>

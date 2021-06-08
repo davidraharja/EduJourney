@@ -7,6 +7,17 @@ object DummyCourse {
     private var id = arrayOf(
         "s1", "s2", "s3", "s4", "h1", "h2", "h3", "h4"
     )
+
+    private var img = arrayOf(
+        R.drawable.comms,
+        R.drawable.office,
+        R.drawable.english,
+        R.drawable.computing,
+        R.drawable.cwriting,
+        R.drawable.webdev,
+        R.drawable.accounting,
+        R.drawable.graphic
+    )
     private var title = arrayOf(
         "Communication",
         "Ms.Office",
@@ -88,7 +99,7 @@ object DummyCourse {
         for(position in id.indices){
             list.add(CourseResponse(
                 courseId = id[position],
-                image = id[position],
+                image = img[position].toString(),
                 title = title[position],
                 description = description[position],
                 type = type[position],
