@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EduJourney">
+        <activity android:name=".SplashActivity" />
         <activity android:name=".ui.history.HistoryActivity" />
         <activity android:name=".DetailModuleActivity" />
         <activity android:name=".ui.detail.DetailCourseActivity"
@@ -18,15 +19,14 @@
         <activity android:name=".EditProfileActivity" />
         <activity
             android:name=".HomeActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-
     </application>
 
 </manifest>
