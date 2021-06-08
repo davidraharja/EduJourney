@@ -1,4 +1,4 @@
-package com.dicoding.edujourney.ui.notifications
+package com.dicoding.edujourney.ui.profile
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

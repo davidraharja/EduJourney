@@ -1,6 +1,6 @@
 package com.dicoding.edujourney.core.source.remote
 
-import com.dicoding.edujourney.DummyCourse
+import com.dicoding.edujourney.core.utils.DummyCourse
 import com.dicoding.edujourney.core.source.remote.network.ApiResponse
 import com.dicoding.edujourney.core.source.remote.network.ApiService
 import com.dicoding.edujourney.core.source.remote.response.CourseResponse

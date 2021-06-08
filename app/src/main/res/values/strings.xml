@@ -51,4 +51,8 @@
     <string name="profile">Profile</string>
     <string name="owned_course">Owned Course</string>
     <string name="emptycourse">You don\'t have any course</string>
+    <string name="price">Harga</string>
+    <string name="price_free">Free</string>
+    <string name="enrolled">Enrolled</string>
+    <string name="enroll_success">Successfully Enroll</string>
 </resources>

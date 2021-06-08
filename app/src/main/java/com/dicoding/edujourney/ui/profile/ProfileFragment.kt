@@ -1,4 +1,4 @@
-package com.dicoding.edujourney.ui.notifications
+package com.dicoding.edujourney.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -38,7 +38,7 @@ val networkModule = module {
     }
     single {
         val retrofit = Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("https://coursera.org")
             .addConverterFactory(GsonConverterFactory.create())
             .client(get())
             .build()

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dicoding.edujourney">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".KoinStarter"
@@ -12,11 +13,11 @@
         android:theme="@style/Theme.EduJourney">
         <activity android:name=".ui.history.HistoryActivity" />
         <activity android:name=".DetailModuleActivity" />
-        <activity android:name=".ui.detail.DetailCourseActivity" />
+        <activity android:name=".ui.detail.DetailCourseActivity"
+            android:parentActivityName=".HomeActivity"/>
         <activity android:name=".EditProfileActivity" />
         <activity
-            android:name=".BottomActivity"
-            android:label="@string/title_activity_bottom">
+            android:name=".HomeActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 

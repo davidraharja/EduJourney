@@ -1,4 +1,4 @@
-package com.dicoding.edujourney
+package com.dicoding.edujourney.core.utils
 
 import com.dicoding.edujourney.core.source.remote.response.CourseResponse
 
@@ -9,14 +9,14 @@ object DummyCourse {
     )
 
     private var img = arrayOf(
-        "https://www.freepik.com/free-vector/work-chat-concept-illustration_7118068.htm#page=1&query=communication&position=22",
-        "https://www.freepik.com/free-icon/office_14840978.htm#page=1&query=microsoft%20office&position=7",
-        "https://www.freepik.com/free-vector/you-speak-english-lettering-background_2619959.htm#page=1&query=english&position=2",
-        "https://www.freepik.com/free-vector/computer-monitor-graphic-animator-creating-video-game-modeling-motion-processing-video-file-using-professional-editor-vector-illustration-graphic-design-art-designer-workplace-concept_11671412.htm#page=1&query=computer&position=0",
-        "https://www.freepik.com/free-vector/wall-post-concept-illustration_7769804.htm#page=1&query=copywriting&position=1",
-        "https://www.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_10798281.htm#page=1&query=web%20development&position=1",
-        "https://www.freepik.com/free-vector/accountant-concept-illustration_13766143.htm#page=1&query=accounting&position=0",
-        "https://www.freepik.com/free-vector/graphic-design-colorful-geometrical-lettering_7088583.htm#page=1&query=graphic%20design&position=49"
+        "https://image.freepik.com/free-vector/work-chat-concept-illustration_114360-1229.jpg",
+        "https://image.flaticon.com/icons/png/512/732/732222.png",
+        "https://image.freepik.com/free-vector/you-speak-english-lettering-background_23-2147871113.jpg",
+        "https://image.freepik.com/free-vector/computer-monitor-graphic-animator-creating-video-game-modeling-motion-processing-video-file-using-professional-editor-vector-illustration-graphic-design-art-designer-workplace-concept_74855-13038.jpg",
+        "https://image.freepik.com/free-vector/wall-post-concept-illustration_114360-1022.jpg",
+        "https://image.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg",
+        "https://image.freepik.com/free-vector/accountant-concept-illustration_114360-5938.jpg",
+        "https://image.freepik.com/free-vector/graphic-design-colorful-geometrical-lettering_52683-34588.jpg"
     )
     private var title = arrayOf(
         "Communication",

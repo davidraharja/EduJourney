@@ -6,25 +6,46 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.dicoding.edujourney.R
-import com.dicoding.edujourney.core.source.local.entity.CourseEntity
+import com.dicoding.edujourney.core.domain.model.Course
 import com.dicoding.edujourney.databinding.ItemGridCourseBinding
 
 class CourseAdapter : RecyclerView.Adapter<CourseAdapter.CourseViewHolder>() {
-    private var listCourse = ArrayList<CourseEntity>()
-    fun setCourses(course: List<CourseEntity>?) {
+    private var listCourse = ArrayList<Course>()
+    var onItemClick: ((Course) -> Unit)? = null
+
+    fun setCoursesFree(course: List<Course>?) {
         if (course == null) return
         this.listCourse.clear()
-        this.listCourse.addAll(course)
+        for (i in course.indices) {
+            if (course[i].price == 0) listCourse.add(course[i])
+        }
+        notifyDataSetChanged()
+    }
+    fun setCoursesPaid(course: List<Course>?) {
+        if (course == null) return
+        this.listCourse.clear()
+        for (i in course.indices) {
+            if (course[i].price > 0) listCourse.add(course[i])
+        }
         notifyDataSetChanged()
     }
 
-    inner class CourseViewHolder(private val binding: ItemGridCourseBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(course: CourseEntity) {
+    inner class CourseViewHolder(private val binding: ItemGridCourseBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(course: Course) {
             with(binding) {
                 Glide.with(itemView.context).load(course.image).apply(
                     RequestOptions.placeholderOf(R.drawable.ic_loading)
-                    .error(R.drawable.ic_error)).into(imgGridCourse)
+                        .error(R.drawable.ic_error)
+                ).into(imgGridCourse)
                 tvTitleGrid.text = course.title
+                tvPrice.text =
+                    if (course.price == 0) itemView.context.getString(R.string.price_free) else course.price.toString()
+            }
+        }
+        init {
+            itemView.setOnClickListener {
+                onItemClick?.invoke(listCourse[bindingAdapterPosition])
             }
         }
     }
@@ -44,4 +65,5 @@ class CourseAdapter : RecyclerView.Adapter<CourseAdapter.CourseViewHolder>() {
     }
 
     override fun getItemCount(): Int = listCourse.size
+
 }

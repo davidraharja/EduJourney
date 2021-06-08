@@ -13,8 +13,8 @@ class LocalDataSource(private val mCourseDao: CourseDao) {
 
     fun updateEnroll(courseEntity: CourseEntity) = mCourseDao.updateEnroll(courseEntity)
 
-    suspend fun insertCourse(course: List<CourseEntity>) {
-        mCourseDao.insertCourse(course)
+    suspend fun insertCourse(courseEntity: List<CourseEntity>) {
+        mCourseDao.insertCourse(courseEntity)
     }
 
     fun setEnroll(courseEntity: CourseEntity, bought: Boolean) {

@@ -1,45 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item_course"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="10dp"
-    android:orientation="vertical">
-    <!-- Ini list buat recommended course & free course -->
-    <ImageView
-        android:id="@+id/img_grid_course"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:elevation="10dp"
-        android:scaleType="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars"
-        android:contentDescription="@string/image_course" />
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardUseCompatPadding="true">
 
-    <ImageView
-        android:id="@+id/title_spot"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:scaleType="center"
-        android:src="@drawable/title_space"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/img_grid_course"
-        app:layout_constraintStart_toStartOf="@+id/img_grid_course"
-        app:layout_constraintTop_toBottomOf="@+id/img_grid_course" />
-
-    <TextView
-        android:id="@+id/tv_title_grid"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="10dp"
-        android:text="@string/course_title"
-        android:textSize="12sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="@+id/title_spot"
-        app:layout_constraintTop_toTopOf="@+id/title_spot" />
+        android:orientation="vertical">
+        <!-- Ini list buat recommended course & free course -->
+        <ImageView
+            android:id="@+id/img_grid_course"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/image_course"
+            android:elevation="10dp"
+            android:scaleType="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/title_spot"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@color/navigation"
+            android:elevation="10dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/img_grid_course"
+            app:layout_constraintStart_toStartOf="@+id/img_grid_course"
+            app:layout_constraintTop_toBottomOf="@+id/img_grid_course" />
+
+        <TextView
+            android:id="@+id/tv_title_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="@string/course_title"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/title_spot"
+            app:layout_constraintTop_toTopOf="@+id/title_spot" />
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="@string/price"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_grid"
+            app:layout_constraintStart_toStartOf="@id/title_spot"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -19,7 +19,7 @@ interface CourseDao {
     fun updateEnroll(courseEntity: CourseEntity)
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertCourse(course: List<CourseEntity>)
+    suspend fun insertCourse(courseEntity: List<CourseEntity>)
 
     @Query("SELECT * FROM course_table WHERE title LIKE :query")
     fun getSearch(query:String): Flow<List<CourseEntity>>

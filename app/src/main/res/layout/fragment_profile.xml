@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    android:background="@color/blue">
 
     <ImageView
         android:id="@+id/img_profile"
@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars"
+        android:src="@drawable/ic_baseline_person_24"
         android:contentDescription="@string/user_profile_picture" />
 
     <TextView
@@ -35,7 +35,8 @@
         android:id="@+id/tab1"
         android:layout_width="300dp"
         android:layout_height="50dp"
-android:background="@color/login_regis"        app:layout_constraintEnd_toEndOf="parent"
+android:background="@color/login_regis"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_username" />
 
@@ -70,7 +71,7 @@ android:background="@color/login_regis"        app:layout_constraintEnd_toEndOf=
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/login_btn"
+        android:background="@drawable/login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +93,7 @@ android:background="@color/login_regis"        app:layout_constraintEnd_toEndOf=
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/login_btn"
+        android:background="@drawable/login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +125,7 @@ android:background="@color/login_regis"        app:layout_constraintEnd_toEndOf=
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:src="@drawable/login_btn"
+        android:background="@drawable/login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tab_change_profile" />
@@ -155,7 +156,7 @@ android:background="@color/login_regis"        app:layout_constraintEnd_toEndOf=
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/login_btn"
+        android:background="@drawable/login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -177,7 +178,7 @@ android:background="@color/login_regis"        app:layout_constraintEnd_toEndOf=
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/login_btn"
+        android:background="@drawable/login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -209,7 +210,7 @@ android:background="@color/login_regis"        app:layout_constraintEnd_toEndOf=
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:src="@drawable/login_btn"
+        android:background="@drawable/login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tab_about_us" />

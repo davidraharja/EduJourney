@@ -12,7 +12,7 @@ class DashboardFragment : Fragment() {
     private var _fragmentDashboardBinding: FragmentDashboardBinding? = null
     private val binding get() = _fragmentDashboardBinding
 
-    private val dashboardViewModel: DashboardViewModel by viewModel()
+//    private val dashboardViewModel: DashboardViewModel by viewModel()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,14 +24,14 @@ class DashboardFragment : Fragment() {
 
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        if (activity != null) {
-            dashboardViewModel.text.observe(viewLifecycleOwner, {
-                binding?.textDashboard?.text = it
-            })
-        }
-    }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+////        if (activity != null) {
+////            dashboardViewModel.text.observe(viewLifecycleOwner, {
+////                binding?.textDashboard?.text = it
+////            })
+////        }
+//    }
 
     override fun onDestroy() {
         super.onDestroy()
