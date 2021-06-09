@@ -66,7 +66,7 @@ class ProfileFragment : Fragment(), View.OnClickListener {
                 startActivity(Intent(activity, HistoryActivity::class.java))
             }
             R.id.tab_about_us ->{
-
+                startActivity(Intent(activity, AboutActivity::class.java))
             }
         }
 

@@ -56,4 +56,12 @@
     <string name="enrolled">Enrolled</string>
     <string name="enroll_success">Enroll Successful</string>
     <string name="wrong">Incorrect Email or Password</string>
+    <string name="about">
+        EduJourney: The Place to Start your education \n
+        1. Muhammad Adisatriyo Pratama \n
+		2. Jonathan Elloy \n
+		3. David Raharja \n
+		4. Lubby Gennady \n
+		5. Khairunnas \n
+		6. Mukhlis Adi Suryanto</string>
 </resources>
