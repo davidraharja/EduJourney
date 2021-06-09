@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.dicoding.edujourney.core.domain.model.Course
 import com.dicoding.edujourney.core.source.Resource
-import com.dicoding.edujourney.core.ui.CourseAdapter
+import com.dicoding.edujourney.core.ui.GridCourseAdapter
 import com.dicoding.edujourney.core.ui.SkillAdapter
 import com.dicoding.edujourney.databinding.FragmentHomeBinding
 import com.dicoding.edujourney.ui.detail.DetailCourseActivity
@@ -18,8 +18,8 @@ class HomeFragment : Fragment() {
 
     private var _fragmentHomeBinding: FragmentHomeBinding? = null
     private val binding get() = _fragmentHomeBinding
-    private lateinit var adapterFree: CourseAdapter
-    private lateinit var adapterPay: CourseAdapter
+    private lateinit var adapterFree: GridCourseAdapter
+    private lateinit var adapterPay: GridCourseAdapter
     private lateinit var adapterSoft: SkillAdapter
     private lateinit var adapterHard: SkillAdapter
     private val homeViewModel: HomeViewModel by viewModel()
@@ -51,7 +51,7 @@ class HomeFragment : Fragment() {
                     }
                     is Resource.Success -> {
                         adapterFree.setCoursesFree(course.data)
-                        adapterPay.setCoursesPaid(course.data)
+                        adapterPay.setCoursesRec(course.data)
                         adapterSoft.setSoftSkill(course.data)
                         adapterHard.setHardSkill(course.data)
                     }
@@ -64,8 +64,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupRecycler() {
-        adapterFree = CourseAdapter()
-        adapterPay = CourseAdapter()
+        adapterFree = GridCourseAdapter()
+        adapterPay = GridCourseAdapter()
         adapterSoft = SkillAdapter()
         adapterHard = SkillAdapter()
         adapterFree.onItemClick = {

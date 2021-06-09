@@ -18,7 +18,7 @@
     <string name="free_course">Free Course</string>
     <string name="user_profile_picture">User Profile Picture</string>
     <string name="edupoint">EduPoint :</string>
-    <string name="point">123456789</string>
+    <string name="point">100000</string>
     <string name="personal_data">Personal Data</string>
     <string name="change_profile">Change Profile</string>
     <string name="purchase_history">Purchase History</string>
@@ -41,8 +41,8 @@
     <string name="login">Login</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
-    <string name="telp">Telp</string>
-    <string name="tgl_lahir">Tgl Lahir</string>
+    <string name="telp">Phone No.</string>
+    <string name="birth_date">Birth Date</string>
     <string name="new_password">New Password</string>
     <string name="save">Save</string>
     <string name="overview_course">Overview Course</string>
@@ -54,5 +54,6 @@
     <string name="price">Harga</string>
     <string name="price_free">Free</string>
     <string name="enrolled">Enrolled</string>
-    <string name="enroll_success">Successfully Enroll</string>
+    <string name="enroll_success">Enroll Successful</string>
+    <string name="wrong">Incorrect Email or Password</string>
 </resources>

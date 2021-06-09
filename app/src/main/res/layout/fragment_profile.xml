@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue">
@@ -11,13 +10,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="85dp"
+        android:contentDescription="@string/user_profile_picture"
+        android:src="@drawable/ic_profile_person_sample"
         android:text="@string/hello_blank_fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_baseline_person_24"
-        android:contentDescription="@string/user_profile_picture" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_username"
@@ -35,7 +34,7 @@
         android:id="@+id/tab1"
         android:layout_width="300dp"
         android:layout_height="50dp"
-android:background="@color/login_regis"
+        android:background="@color/login_regis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_username" />
@@ -104,10 +103,10 @@ android:background="@color/login_regis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:contentDescription="@string/user_logo"
         android:src="@drawable/ic_baseline_person_outline_dark_24"
         app:layout_constraintStart_toStartOf="@+id/tab_change_profile"
-        app:layout_constraintTop_toTopOf="@+id/tab_change_profile"
-        android:contentDescription="@string/user_logo" />
+        app:layout_constraintTop_toTopOf="@+id/tab_change_profile" />
 
     <TextView
         android:id="@+id/tv_change_profile"
@@ -115,8 +114,8 @@ android:background="@color/login_regis"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-        android:textSize="14sp"
         android:text="@string/change_profile"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/user_logo"
         app:layout_constraintTop_toTopOf="@+id/tab_change_profile" />
 
@@ -135,10 +134,10 @@ android:background="@color/login_regis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:contentDescription="@string/history_logo"
         android:src="@drawable/ic_baseline_history_24"
         app:layout_constraintStart_toStartOf="@+id/tab_purchase_hisotry"
-        app:layout_constraintTop_toTopOf="@+id/tab_purchase_hisotry"
-        android:contentDescription="@string/history_logo" />
+        app:layout_constraintTop_toTopOf="@+id/tab_purchase_hisotry" />
 
     <TextView
         android:id="@+id/tv_history"
@@ -146,8 +145,8 @@ android:background="@color/login_regis"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-        android:textSize="14sp"
         android:text="@string/purchase_history"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/history_logo"
         app:layout_constraintTop_toTopOf="@+id/tab_purchase_hisotry" />
 
@@ -189,10 +188,10 @@ android:background="@color/login_regis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:contentDescription="@string/about_us_logo"
         android:src="@drawable/ic_baseline_person_outline_dark_24"
         app:layout_constraintStart_toStartOf="@+id/tab_about_us"
-        app:layout_constraintTop_toTopOf="@+id/tab_about_us"
-        android:contentDescription="@string/about_us_logo" />
+        app:layout_constraintTop_toTopOf="@+id/tab_about_us" />
 
     <TextView
         android:id="@+id/tv_about_us"
@@ -200,8 +199,8 @@ android:background="@color/login_regis"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-        android:textSize="14sp"
         android:text="@string/about_us"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/about_us_logo"
         app:layout_constraintTop_toTopOf="@+id/tab_about_us" />
 
@@ -220,10 +219,10 @@ android:background="@color/login_regis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:contentDescription="@string/logout_logo"
         android:src="@drawable/ic_baseline_history_24"
         app:layout_constraintStart_toStartOf="@+id/tab_logout"
-        app:layout_constraintTop_toTopOf="@+id/tab_logout"
-        android:contentDescription="@string/logout_logo" />
+        app:layout_constraintTop_toTopOf="@+id/tab_logout" />
 
     <TextView
         android:id="@+id/tv_logout"
@@ -231,8 +230,8 @@ android:background="@color/login_regis"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-        android:textSize="14sp"
         android:text="@string/log_out"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/logout_logo"
         app:layout_constraintTop_toTopOf="@+id/tab_logout" />
 

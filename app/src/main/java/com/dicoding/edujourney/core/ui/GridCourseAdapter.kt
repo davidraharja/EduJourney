@@ -9,7 +9,7 @@ import com.dicoding.edujourney.R
 import com.dicoding.edujourney.core.domain.model.Course
 import com.dicoding.edujourney.databinding.ItemGridCourseBinding
 
-class CourseAdapter : RecyclerView.Adapter<CourseAdapter.CourseViewHolder>() {
+class GridCourseAdapter : RecyclerView.Adapter<GridCourseAdapter.CourseViewHolder>() {
     private var listCourse = ArrayList<Course>()
     var onItemClick: ((Course) -> Unit)? = null
 
@@ -21,14 +21,17 @@ class CourseAdapter : RecyclerView.Adapter<CourseAdapter.CourseViewHolder>() {
         }
         notifyDataSetChanged()
     }
-    fun setCoursesPaid(course: List<Course>?) {
+
+    fun setCoursesRec(course: List<Course>?) {
         if (course == null) return
         this.listCourse.clear()
         for (i in course.indices) {
-            if (course[i].price > 0) listCourse.add(course[i])
+            if (course[i].recommended) listCourse.add(course[i])
         }
         notifyDataSetChanged()
     }
+
+
 
     inner class CourseViewHolder(private val binding: ItemGridCourseBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -43,6 +46,7 @@ class CourseAdapter : RecyclerView.Adapter<CourseAdapter.CourseViewHolder>() {
                     if (course.price == 0) itemView.context.getString(R.string.price_free) else course.price.toString()
             }
         }
+
         init {
             itemView.setOnClickListener {
                 onItemClick?.invoke(listCourse[bindingAdapterPosition])
@@ -59,7 +63,7 @@ class CourseAdapter : RecyclerView.Adapter<CourseAdapter.CourseViewHolder>() {
         return CourseViewHolder(itemCourseBinding)
     }
 
-    override fun onBindViewHolder(holder: CourseAdapter.CourseViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: GridCourseAdapter.CourseViewHolder, position: Int) {
         val course = listCourse[position]
         holder.bind(course)
     }
