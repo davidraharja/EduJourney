@@ -1,9 +1,8 @@
 package com.dicoding.edujourney.ui.profile
 
-import android.os.Build
 import android.os.Bundle
 import android.view.View
-import androidx.annotation.RequiresApi
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.isDigitsOnly
 import com.dicoding.edujourney.R
@@ -48,7 +47,6 @@ class EditProfileActivity : AppCompatActivity(), View.OnClickListener,
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.N)
     override fun onClick(v: View) {
         when (v.id) {
             R.id.btn_save ->
@@ -76,6 +74,7 @@ class EditProfileActivity : AppCompatActivity(), View.OnClickListener,
                     }
 
                     saveUser(firstName, lastName, phone, birth)
+
                 }
             R.id.edt_tgl -> {
                 val datePickerFragment = DatePickerFragment()
@@ -85,6 +84,7 @@ class EditProfileActivity : AppCompatActivity(), View.OnClickListener,
     }
 
     private fun saveUser(firstName: String, lastName: String, phone: String, birth: String) {
+        Toast.makeText(this@EditProfileActivity,"Profile Saved", Toast.LENGTH_SHORT).show()
         val profilePreference = ProfilePreference(this)
         val user = profilePreference.getUser()
         val set = User(

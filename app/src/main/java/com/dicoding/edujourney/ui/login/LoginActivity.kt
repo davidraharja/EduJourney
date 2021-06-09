@@ -49,7 +49,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                         setLogin()
                         startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
                         finish()
-                    } else {
+                    } else if(email.isNotEmpty() || password.isNotEmpty()) {
                         edtEmail.error = INCORRECT_REQ
                         edtPw.error = INCORRECT_REQ
                     }
